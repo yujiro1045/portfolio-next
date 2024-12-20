@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // Define el estándar de JavaScript al que se compila.
+    "module": "esnext", // Especifica el formato del módulo.
+    "strict": true, // Activa el modo estricto.
+    "jsx": "preserve", // Configuración específica para React Native.
+    "moduleResolution": "node", // Permite usar módulos de Node.js.
+    "baseUrl": ".", // Base para resolver rutas.
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ], // Alias para tus rutas.
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@hooks/*": [
+        "hooks/*"
+      ]
+    },
+    "esModuleInterop": true, // Permite importar módulos comunes.
+    "skipLibCheck": true, // Ignora los errores en archivos de definición de tipo.
+    "forceConsistentCasingInFileNames": true, // Asegura consistencia en el uso de mayúsculas y minúsculas.
+    "resolveJsonModule": true, // Permite importar JSON.
+    "noEmit": true // Evita que se generen archivos `.js`.
+    ,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ], // Archivos a incluir.
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ] // Archivos o carpetas a ignorar.
+}
