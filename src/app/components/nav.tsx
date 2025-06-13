@@ -17,7 +17,6 @@ export function Nav() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Cerrar el menú cuando se cambia de ruta
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
