@@ -72,7 +72,7 @@ export default function RootLayout({
                   </p>
                   <div className="flex space-x-4">
                     <a
-                      href="#"
+                      href="https://github.com/yujiro1045"
                       className="text-secondary-400 hover:text-primary-600 transition-colors"
                       aria-label="GitHub"
                     >
@@ -85,7 +85,7 @@ export default function RootLayout({
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/juan-medina-93a79a262/"
                       className="text-secondary-400 hover:text-primary-600 transition-colors"
                       aria-label="LinkedIn"
                     >
@@ -98,7 +98,7 @@ export default function RootLayout({
                       </svg>
                     </a>
                     <a
-                      href="#"
+                      href="mailto:juanmedi730@gmail.com"
                       className="text-secondary-400 hover:text-primary-600 transition-colors"
                       aria-label="Email"
                     >

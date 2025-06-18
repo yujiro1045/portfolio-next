@@ -35,7 +35,6 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4 py-20">
-        {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
           <h1 className="text-4xl lg:text-5xl font-display font-bold text-secondary-900 mb-6">
             Sobre Mí
@@ -47,7 +46,6 @@ export default function About() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-          {/* Personal Story */}
           <div className="animate-slide-up">
             <div className="bg-white rounded-2xl shadow-soft p-8">
               <h2 className="text-2xl font-display font-bold text-secondary-900 mb-6">
@@ -94,7 +92,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Skills */}
           <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
             <div className="bg-white rounded-2xl shadow-soft p-8">
               <h2 className="text-2xl font-display font-bold text-secondary-900 mb-6">
@@ -127,7 +124,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Values */}
         <div
           className="mb-20 animate-slide-up"
           style={{ animationDelay: "0.4s" }}
@@ -156,7 +152,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Fun Facts */}
         <div className="animate-slide-up" style={{ animationDelay: "0.6s" }}>
           <div className="bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl shadow-large p-8 text-white text-center">
             <h2 className="text-2xl font-display font-bold mb-6">

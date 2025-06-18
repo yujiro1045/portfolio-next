@@ -44,37 +44,25 @@ export default function Home() {
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-secondary-300 text-secondary-700 hover:bg-secondary-50"
-              >
-                <Link href="/about" className="flex items-center gap-2">
-                  <Download className="w-4 h-4" />
-                  Descargar CV
-                </Link>
-              </Button>
             </div>
 
-            {/* Social Links */}
             <div className="flex items-center gap-4">
               <span className="text-secondary-500 text-sm">Sígueme:</span>
               <div className="flex gap-3">
                 <a
-                  href="#"
+                  href="https://github.com/yujiro1045"
                   className="p-2 text-secondary-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
                 >
                   <Github className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/juan-medina-93a79a262/"
                   className="p-2 text-secondary-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a
-                  href="#"
+                  href="mailto:juanmedi730@gmail.com"
                   className="p-2 text-secondary-400 hover:text-primary-600 hover:bg-primary-50 rounded-lg transition-colors"
                 >
                   <Mail className="w-5 h-5" />
@@ -83,7 +71,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Profile Image/Illustration */}
           <div className="flex-1 max-w-md animate-float">
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-primary-400 to-accent-400 rounded-full shadow-large mx-auto"></div>
@@ -93,7 +80,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Preview */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-display font-bold text-secondary-900 mb-4">
@@ -106,29 +92,24 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          {[
-            "React",
-            "Next.js",
-            "TypeScript",
-            "React Native",
-            "Tailwind",
-            "Node.js",
-          ].map((tech, index) => (
-            <div
-              key={tech}
-              className="bg-white rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 text-center animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="w-12 h-12 bg-primary-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
-                <span className="text-primary-600 font-bold text-sm">
-                  {tech.slice(0, 2)}
-                </span>
+          {["React", "Next.js", "TypeScript", "React Native", "Tailwind"].map(
+            (tech, index) => (
+              <div
+                key={tech}
+                className="bg-white rounded-xl p-6 shadow-soft hover:shadow-medium transition-all duration-300 hover:-translate-y-1 text-center animate-slide-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="w-12 h-12 bg-primary-100 rounded-lg mx-auto mb-3 flex items-center justify-center">
+                  <span className="text-primary-600 font-bold text-sm">
+                    {tech.slice(0, 2)}
+                  </span>
+                </div>
+                <h3 className="font-semibold text-secondary-800 text-sm">
+                  {tech}
+                </h3>
               </div>
-              <h3 className="font-semibold text-secondary-800 text-sm">
-                {tech}
-              </h3>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </section>
     </div>

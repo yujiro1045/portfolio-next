@@ -5,7 +5,6 @@ export default function Experience() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4 py-20">
-        {/* Header */}
         <div className="text-center mb-16 animate-slide-up">
           <h1 className="text-4xl lg:text-5xl font-display font-bold text-secondary-900 mb-6">
             Mi Experiencia
@@ -17,10 +16,8 @@ export default function Experience() {
           </p>
         </div>
 
-        {/* Timeline */}
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            {/* Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-200 via-primary-400 to-primary-200"></div>
 
             {experiences.map((exp, index) => (
@@ -29,16 +26,13 @@ export default function Experience() {
                 className="relative flex items-start gap-8 mb-12 animate-slide-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                {/* Timeline Dot */}
                 <div className="relative z-10 flex-shrink-0">
                   <div className="w-16 h-16 bg-white rounded-full shadow-medium flex items-center justify-center border-4 border-primary-100">
                     <BriefcaseIcon className="w-6 h-6 text-primary-600" />
                   </div>
                 </div>
 
-                {/* Experience Card */}
                 <div className="flex-1 bg-white rounded-2xl shadow-soft hover:shadow-medium transition-all duration-300 p-8 group">
-                  {/* Header */}
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <div>
                       <h3 className="text-xl font-display font-bold text-secondary-900 mb-2 group-hover:text-primary-600 transition-colors">
@@ -64,7 +58,6 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  {/* Description */}
                   <div className="space-y-3">
                     {exp.description.map((item, i) => (
                       <div key={i} className="flex items-start gap-3">
@@ -76,7 +69,6 @@ export default function Experience() {
                     ))}
                   </div>
 
-                  {/* Skills/Technologies used */}
                   <div className="mt-6 pt-6 border-t border-secondary-100">
                     <h4 className="text-sm font-semibold text-secondary-500 mb-3 uppercase tracking-wide">
                       Tecnologías utilizadas
@@ -100,7 +92,6 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="mt-20 animate-slide-up">
           <div className="bg-white rounded-2xl shadow-soft p-8">
             <h2 className="text-2xl font-display font-bold text-center text-secondary-900 mb-8">
