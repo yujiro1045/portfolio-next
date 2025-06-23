@@ -60,4 +60,13 @@ export const projects: Project[] = [
     technologies: ["React Native", "zustand", "CSS", "typescript"],
     githubLink: "https://github.com/yujiro1045/FilmHub",
   },
+  {
+    title: "Money Manager App",
+    description:
+      "Aplicación móvil para gestionar finanzas personales, permitiendo a los usuarios llevar un control de sus gastos e ingresos de manera sencilla y efectiva.",
+    image: "/assets/imgs/moneymanagerapp.png",
+    technologies: ["React", "Next", "Tailwind", "typescript"],
+    githubLink: "https://github.com/yujiro1045/Money-manager-app",
+    liveLink: "https://money-manager-app-phi.vercel.app",
+  },
 ];
