@@ -54,7 +54,9 @@ export default function Projects() {
               <div className="p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Calendar className="w-4 h-4 text-secondary-400" />
-                  <span className="text-sm text-secondary-500">2024</span>
+                  <span className="text-sm text-secondary-500">
+                    {project.year}
+                  </span>
                 </div>
 
                 <h3 className="text-xl font-display font-bold text-secondary-900 mb-3 group-hover:text-primary-600 transition-colors">

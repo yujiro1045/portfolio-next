@@ -3,6 +3,7 @@ export interface Project {
   description: string;
   image: string | string[];
   technologies: string[];
+  year: number;
   liveLink?: string;
   githubLink?: string;
 }
@@ -12,60 +13,63 @@ export const projects: Project[] = [
     title: "Quchara",
     description:
       "Aplicación móvil innovadora para compartir y descubrir recetas. Desarrollada con React Native y Expo, ofrece una experiencia de usuario fluida y atractiva.",
-    image: "/assets/imgs/quchara.jpeg",
+    image: "/assets/imgs/quchara/quchara.jpeg",
     technologies: ["React Native", "Expo", "Firebase", "typescript"],
+    year: 2023,
     liveLink: "https://quchara.com/",
   },
   {
     title: "Sistema de Agendamiento para Peluquerías",
     description:
       "Plataforma web para peluquerías que permite a los clientes reservar citas en línea. Incluye un panel de administración para gestionar horarios y servicios.",
-    image: "/assets/imgs/nailsProject.png",
+    image: "/assets/imgs/nailsProject/nailsProject.png",
     technologies: ["React", "Next.js", "Node.js", "MongoDB", "typescript"],
+    year: 2024,
   },
   {
     title: "Pokemon App",
     description:
-      "Una aplicación interactiva que utiliza la PokeAPI para buscar Pokémon, mostrando sus habilidades en tarjetas informativas, con modos noche y día personalizables..",
-    image: "/assets/imgs/pokeApi.png",
-    technologies: ["React", "CSS", "Javascript", "typescript"],
-    liveLink: "https://pokemons-app-ivory.vercel.app/",
-    githubLink: "https://github.com/yujiro1045/pokemons-App",
+      "Una aplicación interactiva que utiliza la PokeAPI para filtrar Pokémons, mostrando sus habilidades en tarjetas informativas, con filtros de tipo, altura, peso, etc...",
+    image: "/assets/imgs/pokeApi/pokeApi2.png",
+    technologies: ["Next.js", "Tailwind CSS", "Javascript", "typescript"],
+    year: 2025,
+    liveLink: "https://pokemonappweb.netlify.app/",
+    githubLink: "https://github.com/yujiro1045/Pokedex",
   },
   {
     title: "Book-App List",
     description:
       "Una aplicacion web la cual te permite seleccionar distintos libros a una lista de lectura personalizada y filtrarlos por medio de sus generos.",
-    image: "/assets/imgs/bookAppList.png",
+    image: "/assets/imgs/bookAppList/bookAppList.png",
     technologies: ["React", "zustand", "CSS", "jest", "typescript"],
+    year: 2024,
     githubLink: "https://github.com/yujiro1045/book-list-app",
   },
   {
     title: "Teslo-shop",
     description:
       "Creada con Next.js es una pagina de una tienda de ropa de la marca tesla, la cual tiene ropa para hombres, mujeres y niños, cuanto con un carrito de compras y un navbar y sideBar totalmente funcionales.",
-    image: "/assets/imgs/teslo-shop.png",
+    image: "/assets/imgs/tesloShop/teslo-shop.png",
     technologies: ["React", "Next.js", "Tailwind CSS", "Docker", "typescript"],
+    year: 2024,
     githubLink: "https://github.com/yujiro1045/Teslo-shop",
   },
   {
     title: "FilmHub",
     description:
       "Esta es una app creada con React-Native expo, la cual es una aplicacion que muestra las peliculas mas populares del momento, contiene un buscador y una pantalla de favoritos en donde pueden guardar sus peliculas favoritas y a la vez eliminarlas de esa lista.",
-    image: [
-      "/assets/imgs/FilmHub1.jpeg",
-      "/assets/imgs/FilmHub3.jpeg",
-      "/assets/imgs/FilmHub4.jpeg",
-    ],
+    image: "/assets/imgs/filmHub/combined_filmhub.jpeg",
     technologies: ["React Native", "zustand", "CSS", "typescript"],
+    year: 2024,
     githubLink: "https://github.com/yujiro1045/FilmHub",
   },
   {
     title: "Money Manager App",
     description:
       "Aplicación móvil para gestionar finanzas personales, permitiendo a los usuarios llevar un control de sus gastos e ingresos de manera sencilla y efectiva.",
-    image: "/assets/imgs/moneymanagerapp.png",
-    technologies: ["React", "Next", "Tailwind", "typescript"],
+    image: "/assets/imgs/moneyManager/moneymanagerapp2.png",
+    technologies: ["React", "Next", "Tailwind", "typescript", "Firebase"],
+    year: 2025,
     githubLink: "https://github.com/yujiro1045/Money-manager-app",
     liveLink: "https://money-manager-app-phi.vercel.app",
   },
